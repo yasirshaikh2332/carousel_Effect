@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+}
+.container-img{
+    width: 1280px;
+    height: 720px;
+    border-radius: 1rem;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    background-image: url(/image/space6.jpg);
+    background-size: cover;
+    animation: gallery 20s linear infinite;
+   
+    -webkit-animation: gallery 20s linear infinite;
+}
+@keyframes gallery {
+    0%{
+        background-image: url(/image/space1.jpg);
+    }
+    20%{
+        background-image: url(/image/space2.jpg);
+    } 
+     40%{
+        background-image: url(/image/space3.jpg);       
+    } 
+     60%{
+        background-image: url(/image/space4.jpg);
+    } 
+     80%{
+        background-image: url(/image/space5.jpg);
+    }
+   100%{
+    background-image: url(/image/space7.jpg);
+    }
+
+}
